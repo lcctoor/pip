@@ -1,0 +1,19 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "openai2"
+version = "1.7.13"
+description = "ChatGPT 工具包，支持多模态对话（gpt-4o）、连续对话、流式对话（逐字显示）、生成图像（DALL·E）、对话存档与载入、对话回滚、对话伪造、轮询 api_key 池、群聊多角色模拟、限制历史消息数量、异步请求。"
+dependencies = ["openai>=1.59.6"]
+keywords = ["openai", "chatgpt", "openai2"]
+
+requires-python = ">=3.12"
+readme = "README.md"
+authors = [{name = "江南雨上", email = "lcctoor@outlook.com"}]
+license = {file = "LICENSE"}
+classifiers = ["License :: OSI Approved :: Apache Software License"]
+
+[project.scripts]
+[project.urls]
