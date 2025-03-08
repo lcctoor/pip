@@ -24,15 +24,10 @@
 
 ```
 ollama run deepseek-r1:1.5b  # 无条件可以执行
-
 ollama run deepseek-r1:7b  # 5G以下显存
-
 ollama run deepseek-r1:14b  # 12G显存
-
 ollama run deepseek-r1:32b  # 24G显存
-
 ollama run deepseek-r1:70b  # 48G显存
-
 ollama run deepseek-r1:671b  # 大于48G显存
 ```
 
@@ -60,6 +55,7 @@ Denny = Chat(model='deepseek-r1:7b')
 
 ```python
 answer = Denny.request('1的后继数是多少')
+
 print(answer)  # >>> '1的后继数是2'
 ```
 
@@ -67,6 +63,7 @@ print(answer)  # >>> '1的后继数是2'
 
 ```python
 answer = Denny.stream_request('再往后是多少')
+
 for x in answer:
     print(x, end='', flush=True)
 
@@ -74,6 +71,6 @@ for x in answer:
 往
 后
 是
-2
+3
 。
 ```
